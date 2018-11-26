@@ -34,9 +34,10 @@ class Cats extends Component {
             </p>
           </Grid.Column>
           <Grid.Column floated='right' width={6}>
-            <Image size='medium' src='./imgs/AshleyFinal.jpg' circular />
-          </Grid.Column >
-          <Grid.Column 
+            <Image size='medium' src='./imgs/Boris.jpg' circular />
+          </Grid.Column>
+          <Grid.Column floated='right' width={6}>
+            <Image size='medium' src='./imgs/Katya.jpg' circular />
           </Grid.Column>
         </Grid.Row>
       </Grid>

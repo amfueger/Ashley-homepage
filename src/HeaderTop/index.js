@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Header } from 'semantic-ui-react';
+import { Header, Divider } from 'semantic-ui-react';
 
 
-class HeaderTop extends Component {
-  render() {
+const HeaderTop = ({ mobile }) => {
   return(
   <div className="header">
   
@@ -13,29 +12,34 @@ class HeaderTop extends Component {
     >
       <source 
       type="video/mp4" 
-      source="./imgs/Behind-the-screen.mp4" />
+      src="./imgs/Behind-the-screen.mp4" 
+      />
     </video>
     <Header
       as='h1'
       content='Ashley Fueger'
       inverted
       style={{
+        fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
-        marginBottom: 0,  
+        marginBottom: 0, 
+        marginTop: mobile ? '1.5em' : '3em', 
       }}
     />
     <Header
       as='h2'
-      content='Full-stack Developer'
+      content='Full-stack, full-time'
       inverted
       style={{
-        fontWeight: 'normal'
+        fontSize: mobile ? '1.5em' : '1.7em',
+        fontWeight: 'normal',
+        marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-
+  <div className="header-text">
   </div>
-    )
-  }
+  </div>
+  )
 }
 
 export default HeaderTop;

@@ -3,7 +3,7 @@ import { Grid } from "semantic-ui-react";
 import { VideoScroll } from "react-video-scroll";
 import { Image } from "semantic-ui-react";
 
-class AboutMe extends Component {
+class AboutMe extends React.Component {
   constructor() {
     super();
 
